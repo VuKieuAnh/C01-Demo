@@ -9,10 +9,10 @@ public class Main {
         material[1].setManufacturingDate(localDate);
         System.out.println(localDate);
         double sum =0;
-//        for (int i = 0; i < material.length; i++) {
-////            tien khuyen nghi;
-//            if (material[i] instanceof Discount)
-//            sum += ((Discount)material[i]).getRealMoney();
-//        }
+        for (int i = 0; i < material.length; i++) {
+//            tien khuyen nghi;
+            if (material[i] instanceof Discount)
+            sum += ((Discount)material[i]).getRealMoney();
+        }
     }
 }
