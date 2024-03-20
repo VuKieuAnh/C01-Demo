@@ -46,6 +46,13 @@ public class CrispyFlour extends Material{
     }
 
     @Override
+    public String toString() {
+        return "CrispyFlour{" +
+                "quantity=" + quantity +
+                "} " + super.toString();
+    }
+
+    @Override
     public LocalDate getExpiryDate() {
         return getManufacturingDate().plusYears(1);
     }

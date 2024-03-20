@@ -1,6 +1,6 @@
 import java.time.LocalDate;
 
-public class Meat extends Material implements Discount {
+public class Meat extends Material implements Discount, Comparable<Meat> {
     private double weight;
 
     public Meat() {
@@ -50,11 +50,24 @@ public class Meat extends Material implements Discount {
         return 0;
     }
 
+    @Override
+    public String toString() {
+        return "Meat{" +
+                "weight=" + weight +
+                "cost=" + getCost() +
+                "} ";
+    }
+
     public double getWeight() {
         return weight;
     }
 
     public void setWeight(double weight) {
         this.weight = weight;
+    }
+
+    @Override
+    public int compareTo(Meat o) {
+        return this.getCost()- o.getCost();
     }
 }
