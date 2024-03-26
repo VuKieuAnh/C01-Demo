@@ -1,3 +1,5 @@
+package model;
+
 import java.time.LocalDate;
 
 public class CrispyFlour extends Material{
@@ -47,7 +49,7 @@ public class CrispyFlour extends Material{
 
     @Override
     public String toString() {
-        return "CrispyFlour{" +
+        return "model.CrispyFlour{" +
                 "quantity=" + quantity +
                 "} " + super.toString();
     }

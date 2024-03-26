@@ -1,3 +1,5 @@
+package model;
+
 import java.time.LocalDate;
 
 public class Meat extends Material implements Discount, Comparable<Meat> {
@@ -52,7 +54,7 @@ public class Meat extends Material implements Discount, Comparable<Meat> {
 
     @Override
     public String toString() {
-        return "Meat{" +
+        return "model.Meat{" +
                 "weight=" + weight +
                 "cost=" + getCost() +
                 "} ";
