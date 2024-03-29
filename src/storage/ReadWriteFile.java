@@ -6,11 +6,11 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ReadWriteFile {
+public class ReadWriteFile implements IReadWriteFile {
 
     public static final String PATHNAME = "c01.dat";
 
-    public static void writeFile(List<User> user){
+    public  void writeFile(List<User> user){
         File a = new File(PATHNAME);
         try {
             OutputStream outputStream = new FileOutputStream(a);
@@ -25,8 +25,7 @@ public class ReadWriteFile {
         }
     }
 
-
-    public static List<User> readFile(){
+    public List<User> readFile(){
         File a = new File(PATHNAME);
         try {
             InputStream is = new FileInputStream(a);
@@ -42,8 +41,4 @@ public class ReadWriteFile {
         }
     }
 
-    public static void main(String[] args) {
-        List<User> l = readFile();
-        System.out.println(l);
-    }
 }

@@ -1,15 +1,18 @@
 package controller;
 
 import model.User;
+import storage.IReadWriteFile;
 import storage.ReadWriteFile;
+import storage.ReadWriteFileExcel;
 
 import java.util.List;
 
 public class UserManager {
-    private static List<User> userList = ReadWriteFile.readFile();
+    private static IReadWriteFile readWriteFile = new ReadWriteFileExcel();
+    private static List<User> userList = readWriteFile.readFile();
 
     public static void addNewUser(User user){
         userList.add(user);
-        ReadWriteFile.writeFile(userList);
+        readWriteFile.writeFile(userList);
     }
 }

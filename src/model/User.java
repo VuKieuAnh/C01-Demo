@@ -1,7 +1,7 @@
 package model;
 
 import java.io.Serializable;
-
+//Mo ta doi tuong user
 public class User implements Serializable {
     private String name;
     private int  age;
