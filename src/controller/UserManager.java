@@ -8,7 +8,7 @@ import storage.ReadWriteFileExcel;
 import java.util.List;
 
 public class UserManager {
-    private static IReadWriteFile readWriteFile = new ReadWriteFileExcel();
+    private static IReadWriteFile readWriteFile = ReadWriteFile.getInstance();
     private static List<User> userList = readWriteFile.readFile();
 
     public static void addNewUser(User user){

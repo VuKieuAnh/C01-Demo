@@ -7,6 +7,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ReadWriteFile implements IReadWriteFile {
+    private static ReadWriteFile instance;
+
+    private ReadWriteFile() {
+    }
+
+    public static ReadWriteFile getInstance() {
+        if (instance==null){
+            synchronized (ReadWriteFile.class){
+                if (instance == null)
+                    instance = new ReadWriteFile();
+            }
+        }
+        return instance;
+    }
 
     public static final String PATHNAME = "c01.dat";
 
