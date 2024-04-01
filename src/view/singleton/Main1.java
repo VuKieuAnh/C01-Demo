@@ -1,4 +1,4 @@
-package view;
+package view.singleton;
 
 public class Main1 {
     public static void main(String[] args) {

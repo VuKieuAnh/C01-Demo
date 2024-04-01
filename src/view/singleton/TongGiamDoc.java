@@ -1,4 +1,4 @@
-package view;
+package view.singleton;
 
 public class TongGiamDoc {
     private static TongGiamDoc instance;

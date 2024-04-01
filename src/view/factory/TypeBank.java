@@ -1,2 +1,5 @@
-package view.factory;public enum TypeBank {
+package view.factory;
+
+public enum TypeBank {
+    VCB, TPBANK
 }
