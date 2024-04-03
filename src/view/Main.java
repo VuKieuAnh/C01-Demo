@@ -1,11 +1,9 @@
 package view;
 
-import controller.UserManager;
 import model.User;
-import storage.IReadWriteFile;
-import storage.ReadWriteFile;
+import storage.user.IReadWriteFile;
+import storage.user.ReadWriteFile;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
